@@ -1,0 +1,14 @@
+name: "VDO.Ninja Offline"
+version: "1.0.0"
+slug: "vdoninja_offline"
+description: "Self-hosted offline VDO.Ninja - LAN video calls, no internet required"
+arch:
+  - aarch64
+startup: services
+boot: auto
+init: false
+ports:
+  8443/tcp: 8443
+ports_description:
+  8443/tcp: "VDO.Ninja HTTPS web + WSS signaling"
+webui: "https://[HOST]:[PORT:8443]/"
